@@ -34,6 +34,33 @@ const Demo2 = () => {
     );
 };
 
+function Demo3() {
+    return (
+      <li>
+          <h3>style</h3>
+          <p style={{color:'red', fontSize: '14px'}}>inline style is object rather than string</p>
+      </li>
+    );
+}
+
+function Demo4() {
+    return (
+        <li>
+            <h3>Comments</h3>
+            {/* Comments... */}
+            <p>标签子节点内的注释应该写在大括号中</p>
+        </li>
+    );
+}
+
+function Demo5() {
+    const arr = [
+      <h3 key ={0}>Array</h3>,
+      <p key={1}>Array will unwind automatically. Notice: each elem in array need key prototype</p>
+    ];
+    return (<li>{arr}</li>);
+}
+
 export default class App extends Component {
     render() {
         return (
@@ -42,6 +69,9 @@ export default class App extends Component {
                 <ul>
                     <Demo1 />
                     <Demo2 />
+                    <Demo3 />
+                    <Demo4 />
+                    <Demo5 />
                 </ul>
             </div>
         );
