@@ -17,9 +17,11 @@
     "no-undef": 0,
     "react/jsx-space-before-closing": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "indent": [2, 4, {"SwitchCase": 1}],
+    "indent": [2, 4, {"SwitchCase": 2}],
     "react/prefer-stateless-function": 0,
-    "arrow-body-style": [2, "as-needed"]
+    /*"react/jsx-indent" : [2, 2],*/
+    "arrow-body-style": [2, "as-needed"],
+    "react/no-array-index-key": 0
   },
   "parser": "babel-eslint",
   "plugins": [
