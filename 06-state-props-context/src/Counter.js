@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 function Content(props) {
     return <p>Content component{"'"}s props.value : {props.value}</p>;
