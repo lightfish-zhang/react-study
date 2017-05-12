@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// 无状态组件，父组件通过props通信
 function Content(props) {
     return <p>Content component{"'"}s props.value : {props.value}</p>;
 }
@@ -9,6 +10,7 @@ Content.propTypes = {
     value: PropTypes.number.isRequired
 };
 
+// 有状态组件，拥有生命周期
 export default class Counter extends Component {
     constructor() {
         super();
